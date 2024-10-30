@@ -1,0 +1,30 @@
+package com.ws_test;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+
+	private int count;
+	
+	
+	@GetMapping("/home/main")
+	public String showHome() {
+		return " hello";
+	}
+	
+	@GetMapping("/home/main1")
+	public String showHome1() {
+		return "안녕하세요";
+	}
+	
+	@GetMapping("/home/main2")
+	public String showHome2() {
+		return " 환영합니다.";
+	}
+	
+	@GetMapping("/increase")
+	public String 
+}

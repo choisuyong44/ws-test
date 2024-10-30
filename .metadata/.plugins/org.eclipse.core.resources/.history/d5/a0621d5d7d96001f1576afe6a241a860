@@ -1,0 +1,13 @@
+package com.ws_test.chat.dto;
+
+import org.springframework.web.socket.WebSocketSession;
+
+import lombok.Getter;
+
+@Getter
+public class ChatRoom {
+	WebSocketSessions
+	private String roomId;
+	private String name;
+	private Set<WebSocketSessions>
+}

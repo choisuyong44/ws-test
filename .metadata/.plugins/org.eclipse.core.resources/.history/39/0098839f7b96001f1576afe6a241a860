@@ -1,0 +1,14 @@
+package com.ws_test.chat.dto;
+
+import java.util.HashSet;
+
+import lombok.Getter;
+
+@Getter
+public class ChatRoom {
+
+	private String roomId;
+	private String name;
+	private Set<WebSocketSession> session = new HashSet<>();
+	
+}

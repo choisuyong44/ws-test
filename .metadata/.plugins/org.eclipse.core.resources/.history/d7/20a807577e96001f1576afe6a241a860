@@ -1,0 +1,20 @@
+package com.ws_test.chat.service;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ws_test.chat.dto.ChatRoom;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class ChatService {
+
+	private final ObjectMapper objectMapper;
+	private Map<String,ChatRoom> chatRooms;
+	
+	
+}

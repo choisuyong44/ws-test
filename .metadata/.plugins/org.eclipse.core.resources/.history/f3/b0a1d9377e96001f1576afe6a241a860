@@ -1,0 +1,5 @@
+package com.ws_test.chat.service;
+
+public class ChatService {
+
+}

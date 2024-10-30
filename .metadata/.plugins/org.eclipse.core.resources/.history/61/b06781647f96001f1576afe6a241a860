@@ -1,0 +1,32 @@
+package com.ws_test.chat.service;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.ws_test.chat.dto.ChatRoom;
+
+import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Service
+public class ChatService {
+
+	private final ObjectMapper objectMapper;
+	private Map<String,ChatRoom> chatRooms;
+	
+	public ChatService(ObjectMapper objectMapper, Map<String, ChatRoom> chatRooms) {
+		this.objectMapper = objectMapper;
+		this.chatRooms = chatRooms;
+	}
+	
+	// 빈 생성 시마다 생성자 호출 이후 생성
+	@PostConstruct
+	private void init() {
+		chatRooms = new LinkedHashMap<>(); // Map 구현체인데, 순서대로 데이터 유지
+	}
+	
+}
