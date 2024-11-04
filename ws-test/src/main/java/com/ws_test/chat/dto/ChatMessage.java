@@ -2,7 +2,9 @@ package com.ws_test.chat.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
+@ToString
 @Getter
 @Setter
 public class ChatMessage {
